@@ -1,0 +1,52 @@
+# ---- Secrets (never commit) ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+*.p12
+secrets/
+*-secret.yaml
+!*sealed-secret.yaml
+!*sealedsecret.yaml
+
+# ---- Kubernetes ----
+kubeconfig
+*.kubeconfig
+.kube/
+k3s.yaml
+
+# ---- Terraform ----
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+.terraform.lock.hcl
+
+# ---- Local notes with real IPs / network info ----
+local/
+network-notes.*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Backups / dumps ----
+*.sql
+*.dump
+*.tar.gz
+backups/
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
